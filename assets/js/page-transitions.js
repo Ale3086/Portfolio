@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // Creiamo l'overlay di transizione
     const transitionOverlay = document.createElement('div');
     transitionOverlay.id = 'page-transition-overlay';
@@ -34,7 +34,7 @@
     }
 
     // Intercettiamo i click sui link interni
-    const links = document.querySelectorAll('a[href^="./"], a[href^="/"], a[href^="index.html"], a[href^="chi-sono.html"], a[href^="progetti.html"], a[href^="riconoscimenti-studi.html"], a[href^="servizi-contatti.html"]');
+    const links = document.querySelectorAll('a[href^="./"], a[href^="/"], a[href^="index.html"], a[href^="chi-sono.html"], a[href^="progetti.html"], a[href^="riconoscimenti-studi.html"], a[href^="contatti.html"]');
     
     links.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -81,7 +81,7 @@
                         // Vai alla nuova pagina (pausa per lasciar leggere il comando)
                         setTimeout(() => {
                             window.location.href = targetUrl;
-                        }, 400); // Prima era 50ms, ora ÃƒÂ¨ abbastanza da essere letto ma veloce
+                        }, 400); // Prima era 50ms, ora Ã¨ abbastanza da essere letto ma veloce
                     }
                 }, typingSpeed);
             }, 150);

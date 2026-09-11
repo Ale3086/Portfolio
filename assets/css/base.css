@@ -1,4 +1,4 @@
-﻿/* Reset e Base */
+/* Reset e Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -279,7 +279,8 @@ main * {
   margin-bottom: 40px;
 }
 
-
-
-
-
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}

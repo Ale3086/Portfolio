@@ -303,6 +303,8 @@ class PixelBlastWebGl {
     }
 
     onPointerDown(e) {
+        if (window.innerWidth <= 600) return; // Disabilita interazione touch solo su smartphone
+        
         const rect = this.canvas.getBoundingClientRect();
         // The original code calculates pointer pos with Y flipped for WebGL coords
         const scaleX = this.canvas.width / rect.width;

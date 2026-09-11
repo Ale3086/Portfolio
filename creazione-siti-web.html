@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo Siti Web | Alessandro Caseti | Perugia</title>
+    <meta name="description" content="Il sito che porta nuovi clienti alla tua attività. Scopri i pacchetti di sviluppo web ottimizzati per la lead generation, con un focus su design premium e sicurezza.">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS (Esclusi i file di animazione boot) -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/landing.css">
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="./assets/js/sfx.js" defer></script>
+    <script src="./assets/js/nav.js" defer></script>
+    <script src="./assets/js/page-transitions.js" defer></script>
+    <script src="./assets/js/image-effects.js" defer></script>
+    <script src="./assets/js/animations.js" defer></script>
+    <script src="./assets/js/pixel-blast.js" defer></script>
+    <script src="./assets/js/decrypted-text.js" defer></script>
+</head>
+<body class="no-scroll landing-page">
+    
+    <!-- Background Animato Pixel Blast (Opacità ridotta per la landing) -->
+    <canvas id="pixel-blast-bg" class="canvas-bg-fixed" style="opacity: 0.45; filter: blur(0.5px);"></canvas>
+
+    <!-- Overlay scuro per migliorare la leggibilità del testo -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, transparent 0%, rgba(10,10,10,0.8) 100%); z-index: -1; pointer-events: none;"></div>
+
+    <!-- Main Navbar (con menu hamburger per mobile) -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">Caseti<span style="color:var(--text-muted); font-size: 0.9rem;">WebDev</span></div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu">&#9776;</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#processo">Il Processo</a>
+                <a href="#prezzi">I Pacchetti</a>
+                <a href="#faq">FAQ</a>
+                <a href="#preventivo" class="btn-primary" style="margin-left: 1rem; font-size: 0.9rem; border-radius: 4px;">Richiedi Preventivo</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <header class="hero-landing">
+        <h1 class="reveal-up">Il sito che porta <span class="accent-text">nuovi clienti</span><br>alla tua attività.</h1>
+        <p class="reveal-up">Basta con i siti vetrina invisibili. Realizzo piattaforme web premium pensate per convertire i visitatori in contatti reali e ispirare fiducia dal primo click.</p>
+        <div class="reveal-up">
+            <a href="#preventivo" class="btn-primary" style="font-size: 1.2rem; padding: 1rem 2rem;">Inizia il tuo Progetto</a>
+        </div>
+        
+        <div class="trust-badges reveal-up">
+            <span>// Sicurezza Integrata</span>
+            <span>// Alte Prestazioni</span>
+            <span>// Mobile First</span>
+            <span>// Design Orientato al Risultato</span>
+        </div>
+    </header>
+
+    <!-- Security Differentiator -->
+    <section class="security-banner reveal-up">
+        <h2>Non solo un bel design.</h2>
+        <p>L'estetica non basta: il tuo sito sarà <strong>strutturato in ottica SEO e orientato alla conversione</strong>. Più che un bel biglietto da visita, avrai tra le mani una vera e propria macchina progettata per farti trovare su Google, attrarre contatti qualificati e trasformarli in clienti paganti.</p>
+    </section>
+
+    <!-- Process Section -->
+    <section class="landing-section" id="processo">
+        <h2 class="section-title reveal-up text-left">Come Lavoriamo</h2>
+        <p class="text-muted-line16-mb reveal-up">Un processo testato per consegnare senza stress.</p>
+        
+        <div class="process-grid reveal-up delay-1">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Briefing</h3>
+                <p>Analizziamo insieme i tuoi obiettivi, il tuo target e definiamo la struttura ottimale.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Acconto</h3>
+                <p>Ufficializziamo il progetto con un acconto del 40% alla firma per bloccare i lavori.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Sviluppo</h3>
+                <p>Scrivo il codice curando design, performance e sicurezza senza farti perdere tempo.</p>
+            </div>
+            <div class="process-step reveal-up delay-3">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Revisioni</h3>
+                <p class="step-desc text-muted-line16-mb">Ti mostro la bozza completa e lavoriamo con revisioni illimitate fino alla tua completa soddisfazione.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <h3>Consegna</h3>
+                <p>Saldo del 60% e messa online. Il tuo nuovo strumento per generare lead è pronto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="landing-section" style="background: rgba(255,255,255,0.02);">
+        <h2 class="section-title reveal-up text-left">Design Premium. Zero Compromessi.</h2>
+        <p class="text-muted-line16-mb reveal-up">Guarda alcuni esempi di cosa posso realizzare per te.</p>
+        
+        <div class="portfolio-grid reveal-up delay-1">
+            <!-- Dentista -->
+            <div class="portfolio-card">
+                <img src="./assets/img/Projects/sitoMamma1.png" alt="Studio Dentistico Pomposelli" onerror="this.src='https://via.placeholder.com/600x400/151515/00ff00?text=Studio+Dentistico'">
+                <div class="portfolio-content">
+                    <h3>Studio Dentistico Pomposelli</h3>
+                    <p>Sviluppo del primo sito per un cliente che ha richiesto un'identità digitale forte e che mostri tutte le opportunità offerte dallo studio.</p>
+                    <a href="https://www.studiodentisticopomposelli.it/" target="_blank" class="btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Vai al sito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="landing-section" id="prezzi">
+        <h2 class="section-title reveal-up text-left">Scegli il Tuo Pacchetto</h2>
+        <p class="text-muted-line16-mb reveal-up">Prezzi chiari, trasparenti e scontati per la fase di lancio.<br>
+        <em style="font-size: 0.85em; opacity: 0.8;">Nota bene: Progetti complessi come <strong>Web App e Gestionali</strong> non rientrano in questi pacchetti (preventivo su misura).</em></p>
+        
+        <div class="promo-banner reveal-up" style="background: rgba(10, 135, 84, 0.15); border: 1px solid rgba(10, 135, 84, 0.5); border-left: 6px solid var(--color-accent); padding: 1.5rem; margin: 2rem 0; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            <strong style="color: #fff; font-size: 1.2em; display: inline-block; margin-bottom: 1rem; background: var(--color-accent); padding: 0.3rem 0.8rem; border-radius: 4px; box-shadow: 0 0 15px rgba(10, 135, 84, 0.6); color: #000; font-family: var(--font-sans); letter-spacing: 1px;">OFFERTA DI LANCIO (Primi 5 Clienti)</strong><br>
+            I prezzi mostrati qui sotto includono uno sconto massiccio rispetto al mio listino standard.<br><br>
+            <strong>INOLTRE:</strong> Se rientri nei primi 5 clienti, scegliendo uno dei pacchetti potrai avere <strong>GRATUITAMENTE 2 elementi extra</strong> a scelta tra:
+            <ul class="square-list" style="margin-top: 0.5rem; font-size: 0.9em;">
+                <li>Logo essenziale (testuale/SVG)</li>
+                <li>QR code brandizzato</li>
+                <li>Firma email HTML professionale</li>
+                <li>Setup base Google Business Profile</li>
+            </ul>
+        </div>
+
+        <div class="pricing-grid reveal-up delay-1">
+            
+            <!-- Landing Page -->
+            <div class="pricing-card">
+                <h3>Landing Page</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Singola pagina altamente persuasiva.</p>
+                <div class="price-container">
+                    <span class="old-price">€300</span>
+                    <span class="new-price">€200</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>1 Pagina (Struttura persuasiva)</li>
+                    <li>Garanzia: 1 modifica gratis in 2 mesi</li>
+                </ul>
+                <a href="#preventivo" class="btn-outline" style="display: block; text-align: center;">Richiedi</a>
+            </div>
+
+            <!-- Sito Web Completo (Consigliato) -->
+            <div class="pricing-card recommended">
+                <div class="badge">CONSIGLIATO</div>
+                <h3>Sito Web Completo</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">La soluzione ideale per affermare il tuo brand.</p>
+                <div class="price-container">
+                    <span class="old-price">€900</span>
+                    <span class="new-price">€600</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>Fino a 7 Pagine strutturate</li>
+                    <li>Garanzia: 3 modifiche gratis in 4 mesi</li>
+                    <li><strong style="color:var(--primary-color);">+1 Elemento in Omaggio</strong> (dall'offerta di lancio o elemento grafico a scelta)</li>
+                </ul>
+                <a href="#preventivo" class="btn-primary" style="display: block; text-align: center;">Richiedi Preventivo</a>
+            </div>
+
+            <!-- Vetrina Base -->
+            <div class="pricing-card">
+                <h3>Vetrina Base</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Per chi ha bisogno di esserci, in modo professionale.</p>
+                <div class="price-container">
+                    <span class="old-price">€600</span>
+                    <span class="new-price">€400</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>3 Pagine (Home, Chi Siamo, Contatti)</li>
+                    <li>Garanzia: 2 modifiche gratis in 3 mesi</li>
+                </ul>
+                <a href="#preventivo" class="btn-outline" style="display: block; text-align: center;">Richiedi</a>
+            </div>
+
+        </div>
+
+        <div class="extras-split-grid reveal-up delay-2" style="margin-top: 4rem;">
+            <!-- Card 1: Funzionalità Extra -->
+            <div>
+                <h3 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.3rem;">Funzionalità Extra</h3>
+                <table class="price-table-minimal">
+                    <tr><td>Pagine aggiuntive (oltre la 7ª)</td><td>+80€/pag</td></tr>
+                    <tr><td>Copywriting persuasivo</td><td>da 100€</td></tr>
+                    <tr><td>Pannello CMS (Gestione autonoma)</td><td><del style="color:var(--text-muted);font-size:0.8em;">250€</del> 200€</td></tr>
+                    <tr><td>Servizio fotografico in sede</td><td>da 120€</td></tr>
+                    <tr><td>Grafica Extra (es. Logo base)</td><td><del style="color:var(--text-muted);font-size:0.8em;">50€</del> 35€</td></tr>
+                </table>
+            </div>
+
+            <!-- Card 2: Modifiche a Consumo -->
+            <div>
+                <h3 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.3rem;">Modifiche a Consumo</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Nessun abbonamento. Paghi solo se e quando serve un aggiornamento al sito (fuori garanzia).</p>
+                <table class="price-table-minimal">
+                    <tr><td>Piccola modifica (testi, foto)</td><td>25€</td></tr>
+                    <tr><td>Modifica media (nuova sezione)</td><td>50€</td></tr>
+                    <tr><td>Creazione nuova pagina</td><td>150€</td></tr>
+                    <tr><td>Restyling del sito</td><td>Su preventivo</td></tr>
+                </table>
+            </div>
+
+            <!-- Card 3: Costi Terzi (Costi Vivi) -->
+            <div>
+                <h3 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.3rem;">Costi di Terze Parti</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Costi annuali da pagare ai fornitori per mantenere il sito online e a norma col GDPR.</p>
+                <table class="price-table-minimal">
+                    <tr><td>Hosting + Dominio (es. TopHost)</td><td>~15€/anno</td></tr>
+                    <tr><td>Privacy Policy Pro (es. Iubenda)</td><td>~60€/anno</td></tr>
+                    <tr><td>Banner Cookie Base (CookieYes)</td><td>Gratis</td></tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="landing-section" id="faq">
+        <h2 class="section-title reveal-up text-left">Domande Frequenti</h2>
+        <p class="text-muted-line16-mb reveal-up">Tutto quello che devi sapere prima di iniziare.</p>
+        
+        <div class="faq-container reveal-up delay-1">
+            <details class="faq-item">
+                <summary class="faq-question">Cosa succede dopo che ti ho contattato?</summary>
+                <div class="faq-answer">Risponderò alla tua email inviandoti un breve questionario per capire esattamente di cosa hai bisogno e poterti formulare un preventivo preciso. Una volta confermato e versato l'acconto, ti invierò un modulo più approfondito: le tue risposte mi permetteranno di studiare il tuo brand e costruire un sito su misura per te.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Quanto tempo serve per avere il sito pronto?</summary>
+                <div class="faq-answer">Solitamente dalle 2 alle 4 settimane, a seconda della complessità del pacchetto scelto e dalla rapidità nel fornire i materiali necessari.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Cosa devo fornirti?</summary>
+                <div class="faq-answer">Idealmente avrò bisogno del tuo logo, dei testi e delle foto della tua attività. Tuttavia, <strong>se non hai questo materiale pronto, non c'è problema</strong>: possiamo valutare insieme di realizzarlo tramite i pacchetti extra (es. copywriting persuasivo o servizio fotografico), costruendo il sito da zero chiavi in mano.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Cosa succede dopo la consegna?</summary>
+                <div class="faq-answer">Una volta online, il sito è 100% di tua proprietà. Per permetterti di testarlo in reale operatività, tutti i pacchetti includono una <strong>Garanzia Post-Lancio</strong> (da 2 a 4 mesi di assistenza con modifiche gratuite). Al termine della garanzia, non sarai vincolato a nessun abbonamento mensile: lavoro "a consumo", intervenendo solo quando serve.</div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Ci sono costi extra per Hosting e Dominio?</summary>
+                <div class="faq-answer">Sì, i costi di hosting, dominio e gestione privacy (es. Iubenda) sono a parte e vanno pagati direttamente ai fornitori terzi (circa 15-30€ all'anno in totale per un sito base). Ti guiderò in ogni passaggio per l'acquisto.</div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="landing-section" id="preventivo">
+        <h2 class="section-title reveal-up text-left">Facciamo Crescere il Tuo Business</h2>
+        <p class="text-muted-line16-mb reveal-up">Nessun form complicato. Contattami direttamente via mail.</p>
+        
+        <div class="contact-split-grid reveal-up delay-1">
+            <div class="contact-left">
+                <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Mettiamoci al Lavoro</h3>
+                <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">Per garantirti la massima velocità e zero costi nascosti, preferisco il contatto diretto via email. Niente form noiosi da compilare.</p>
+                <div class="contact-requirements">
+                    <p style="color: #fff; font-weight: bold; margin-bottom: 1rem;">Scrivimi indicando:</p>
+                    <ul>
+                        <li><span class="accent-text">&gt;</span> Il tuo Nome / Azienda</li>
+                        <li><span class="accent-text">&gt;</span> Tipo di attività (Es. Ristorante, Studio)</li>
+                        <li><span class="accent-text">&gt;</span> Il pacchetto a cui sei interessato</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <h3 style="color: #fff; font-size: 1.5rem; margin: 1rem 0 0.5rem;">Inviami una Mail</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Rispondo in genere entro 24 ore.</p>
+                <a href="mailto:alessandroc2409@gmail.com?subject=Richiesta Preventivo Sviluppo Sito Web" class="btn-primary" style="display: block; text-align: center; width: 100%; box-sizing: border-box; padding: 1.2rem;">Apri Client Mail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" style="text-align: center; padding: 2rem; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 2rem;">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Alessandro Caseti. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Script per avviare le animazioni ignorando il terminale -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.dispatchEvent(new Event('bootComplete'));
+            document.documentElement.classList.remove('no-scroll');
+            document.body.classList.remove('no-scroll');
+        });
+    </script>
+</body>
+</html>

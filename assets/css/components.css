@@ -134,9 +134,9 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: transparent;
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent);
+  background-color: rgba(10, 135, 84, 0.15); /* Sfondo verde semi-trasparente per renderli sempre visibili */
+  color: var(--color-accent-hover); /* Colore più chiaro per maggiore contrasto base */
+  border: 1px solid rgba(10, 135, 84, 0.5); /* Bordo semi-trasparente */
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all var(--transition-speed);
@@ -148,6 +148,19 @@
 .btn:hover {
   background-color: var(--color-accent);
   color: var(--color-bg);
+  box-shadow: 0 0 15px var(--glow-accent);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #000 !important;
+  border: 1px solid var(--color-accent);
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: #000 !important;
   box-shadow: 0 0 15px var(--glow-accent);
 }
 

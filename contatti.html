@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Caseti | Cyber Security & Web Dev | Perugia</title>
+    <meta name="description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta property="og:title" content="Alessandro Caseti | Cyber Security, Web & Hardware | Perugia">
+    <meta property="og:description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta property="og:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <meta property="og:url" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alessandro Caseti | Cyber Security, Web & Hardware | Perugia">
+    <meta name="twitter:description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta name="twitter:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/boot-sequence.css">
+        
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="./assets/js/sfx.js" defer></script>
+    <script src="./assets/js/nav.js" defer></script>
+    <script src="./assets/js/page-transitions.js" defer></script>
+    <script src="./assets/js/image-effects.js" defer></script>
+    <script src="./assets/js/animations.js" defer></script>
+    <script src="./assets/js/pixel-blast.js" defer></script>
+    <script src="./assets/js/decrypted-text.js" defer></script>
+    <script src="./assets/js/boot-sequence.js" defer></script>
+<script>if(sessionStorage.getItem('hasBooted')){document.documentElement.classList.add('has-booted');}</script>
+      <!-- SEO: Dati Strutturati JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Alessandro Caseti",
+      "url": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/",
+      "image": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg",
+      "jobTitle": "Junior Cyber Security Specialist & Web Developer",
+      "alumniOf": {
+        "@type": "HighSchool",
+        "name": "ITTS A. Volta Piscille"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Perugia, Italia"
+      },
+      "knowsAbout": ["Cyber Security", "Web Development", "Hardware (Arduino, ESP32, Saldatura)", "CTF", "Ethical Hacking"]
+    }
+    </script>
+</head>
+<body class="no-scroll">
+        <div id="desktop-environment">
+        <div id="desktop-background"></div>
+        <div id="terminal-window">
+            <div class="terminal-titlebar">
+                <div class="terminal-buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">caseti@linux: ~</div>
+            </div>
+            <div id="boot-screen"></div>
+        </div>
+        <div id="taskbar">
+                                    <div class="taskbar-center">
+                <div class="app-icon" title="Spotify">
+                    <img src="./assets/img/icons/spotify_icon_1784744488073.png" alt="Spotify" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="WhatsApp">
+                    <img src="./assets/img/icons/whatsapp_icon_1784744497092.png" alt="WhatsApp" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="GitHub">
+                    <img src="./assets/img/icons/github_icon_1784744514795.png" alt="GitHub" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="VS Code">
+                    <img src="./assets/img/icons/vscode_icon_1784744507337.png" alt="VS Code" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon active terminal-icon" title="Terminal">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                </div>
+                <div class="app-icon" title="Chrome">
+                    <img src="./assets/img/icons/chrome_icon_1784744581966.png" alt="Chrome" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+            </div>
+            <div class="taskbar-time" id="taskbar-time">12:00</div>
+        </div>
+    </div>
+    <canvas id="pixel-blast-bg" class="canvas-bg-fixed"></canvas>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">Caseti</div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu">&#9776;</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./chi-sono.html">Chi Sono</a>
+                <a href="./progetti.html">Progetti</a>
+                <a href="./riconoscimenti-studi.html">Studi & Riconoscimenti</a>
+                <a href="./contatti.html" class="active">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <!-- HEADER CONTACT -->
+        <section class="reveal-up text-center" style="margin-top: 2rem; margin-bottom: 5rem;">
+            <h1 class="section-title">Contatti & Networking</h1>
+            <p class="text-muted" style="max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.6;">
+                Sono sempre alla ricerca di nuove sfide per mettermi alla prova, imparare sul campo e fare rete.<br>Se hai un progetto in mente o un'opportunità, scrivimi!
+            </p>
+            
+            <div class="flex-gap-sm-wrap" style="justify-content: center; gap: 1rem;">
+                <a href="mailto:alessandroc2409@gmail.com" class="btn" style="padding: 0.8rem 2rem;">Scrivimi un'Email</a>
+                <a href="https://github.com/Ale3086?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn" style="padding: 0.8rem 2rem;">GitHub</a>
+                <a href="./assets/cv/cv-caseti.pdf" target="_blank" rel="noopener noreferrer" class="btn" style="padding: 0.8rem 2rem;">Scarica CV (PDF)</a>
+            </div>
+        </section>
+        
+        <!-- BENTO GRID "OPEN TO" -->
+        <section class="reveal-up delay-1" style="margin-bottom: 5rem;">
+            <h2 class="title-xl-mb-lg text-center"><span class="text-accent">//</span> Attualmente Open To...</h2>
+            
+            <div class="card-grid grid-cols-2" style="max-width: 1000px; margin: 0 auto; gap: 1.5rem;">
+                
+                <!-- CTF -->
+                <div class="card" style="padding: 2.5rem 2rem; background: rgba(0, 0, 0, 0.4); text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="color: var(--color-accent); margin-bottom: 1.2rem;">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem;">Team CTF</h3>
+                    <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6; margin: 0;">Entrare a far parte di un team competitivo per affrontare challenge di sicurezza e Capture The Flag.</p>
+                </div>
+
+                <!-- Hackathon -->
+                <div class="card" style="padding: 2.5rem 2rem; background: rgba(0, 0, 0, 0.4); text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="color: var(--color-accent); margin-bottom: 1.2rem;">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem;">Hackathon</h3>
+                    <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6; margin: 0;">Partecipare a hackathon, competizioni di coding o game jam collaborando in team strutturati.</p>
+                </div>
+
+                <!-- Supporto & Challenge -->
+                <div class="card" style="padding: 2.5rem 2rem; background: rgba(0, 0, 0, 0.4); text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="color: var(--color-accent); margin-bottom: 1.2rem;">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem;">Supporto & Mentoring</h3>
+                    <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6; margin: 0;">Disponibile ad aiutare o collaborare attivamente su challenge e tecnologie che padroneggio approfonditamente.</p>
+                </div>
+
+                <!-- Hardware & Circuiti -->
+                <div class="card" style="padding: 2.5rem 2rem; background: rgba(0, 0, 0, 0.4); text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="color: var(--color-accent); margin-bottom: 1.2rem;">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem;">Elettronica & Circuiti</h3>
+                    <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6; margin: 0;">Forte passione per l'hardware. Aperto a progetti su piattaforme come Arduino ed ESP32, e lavori di saldatura.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- SUBTLE ALERT: Sviluppo Siti Web -->
+        <section class="reveal-up delay-2" style="max-width: 900px; margin: 0 auto; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; padding: 2rem; background: rgba(10, 135, 84, 0.08); border-left: 4px solid var(--color-accent); border-radius: 6px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">Sviluppo Siti Web & Landing Page</h4>
+                    <p class="text-muted" style="font-size: 0.95rem; margin: 0; line-height: 1.5;">Oltre al networking, realizzo siti vetrina su misura per attività locali e liberi professionisti.</p>
+                </div>
+                <a href="./creazione-siti-web.html" class="btn" style="padding: 0.6rem 1.2rem; font-size: 0.95rem; white-space: nowrap;">
+                    Scopri i servizi web &rarr;
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Caseti. <br class="mobile-break">Tutti i diritti riservati. <span style="opacity: 0.6; font-size: 0.9em; margin-left: 10px;">&middot; Nessun cookie di tracciamento utilizzato.</span></p>
+        <p><a href="./assets/cv/cv-caseti.pdf" target="_blank" rel="noopener noreferrer">Scarica CV (PDF)</a></p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
