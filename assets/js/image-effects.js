@@ -44,25 +44,12 @@
             wrapper.style.position = 'relative';
             wrapper.style.overflow = 'hidden';
 
-            // Parallasse setup: scalo leggermente l'immagine per avere margine di scorrimento
+            // Effetto parallasse rimosso su richiesta dell'utente.
+            // Le immagini ora rimangono statiche al 100% della loro dimensione senza spostarsi durante lo scroll.
             gsap.set(img, {
-                scale: 1.25
+                scale: 1.0,
+                yPercent: 0
             });
-
-            // PARALLASSE (unico effetto mantenuto)
-            gsap.fromTo(img,
-                { yPercent: -10 },
-                {
-                    yPercent: 10,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: wrapper,
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: true
-                    }
-                }
-            );
         });
     }
 
