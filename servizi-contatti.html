@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Caseti | Cyber Security & Web Dev | Perugia</title>
+    <meta name="description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta property="og:title" content="Alessandro Caseti | Cyber Security, Web & Hardware | Perugia">
+    <meta property="og:description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta property="og:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <meta property="og:url" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alessandro Caseti | Cyber Security, Web & Hardware | Perugia">
+    <meta name="twitter:description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta name="twitter:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/boot-sequence.css">
+        
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="./assets/js/sfx.js" defer></script>
+    <script src="./assets/js/nav.js" defer></script>
+    <script src="./assets/js/page-transitions.js" defer></script>
+    <script src="./assets/js/image-effects.js" defer></script>
+    <script src="./assets/js/animations.js" defer></script>
+    <script src="./assets/js/pixel-blast.js" defer></script>
+    <script src="./assets/js/decrypted-text.js" defer></script>
+    <script src="./assets/js/boot-sequence.js" defer></script>
+<script>if(sessionStorage.getItem('hasBooted')){document.documentElement.classList.add('has-booted');}</script>
+      <!-- SEO: Dati Strutturati JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Alessandro Caseti",
+      "url": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/",
+      "image": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg",
+      "jobTitle": "Junior Cyber Security Specialist & Web Developer",
+      "alumniOf": {
+        "@type": "HighSchool",
+        "name": "ITTS A. Volta Piscille"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Perugia, Italia"
+      },
+      "knowsAbout": ["Cyber Security", "Web Development", "Hardware (Arduino, ESP32, Saldatura)", "CTF", "Ethical Hacking"]
+    }
+    </script>
+</head>
+<body class="no-scroll">
+        <div id="desktop-environment">
+        <div id="desktop-background"></div>
+        <div id="terminal-window">
+            <div class="terminal-titlebar">
+                <div class="terminal-buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">caseti@linux: ~</div>
+            </div>
+            <div id="boot-screen"></div>
+        </div>
+        <div id="taskbar">
+                                    <div class="taskbar-center">
+                <div class="app-icon" title="Spotify">
+                    <img src="./assets/img/icons/spotify_icon_1784744488073.png" alt="Spotify" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="WhatsApp">
+                    <img src="./assets/img/icons/whatsapp_icon_1784744497092.png" alt="WhatsApp" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="GitHub">
+                    <img src="./assets/img/icons/github_icon_1784744514795.png" alt="GitHub" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="VS Code">
+                    <img src="./assets/img/icons/vscode_icon_1784744507337.png" alt="VS Code" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon active terminal-icon" title="Terminal">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                </div>
+                <div class="app-icon" title="Chrome">
+                    <img src="./assets/img/icons/chrome_icon_1784744581966.png" alt="Chrome" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+            </div>
+            <div class="taskbar-time" id="taskbar-time">12:00</div>
+        </div>
+    </div>
+    <canvas id="pixel-blast-bg" class="canvas-bg-fixed"></canvas>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">Caseti</div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu">&#9776;</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./chi-sono.html">Chi Sono</a>
+                <a href="./progetti.html">Progetti</a>
+                <a href="./riconoscimenti-studi.html">Studi & Riconoscimenti</a>
+                <a href="./servizi-contatti.html" class="active">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <h1 class="section-title reveal-up text-left">Contatti & Servizi</h1>
+        
+        <!-- TOP SECTION: Two columns -->
+        <div class="servizi-top-grid top-grid-styles">
+            
+            <!-- Left: Collaborazioni -->
+            <section class="reveal-up delay-1">
+                <h2 class="title-xl-mb-lg"><span class="text-accent">//</span> Open to...</h2>
+                <p class="text-muted-line16-mb">
+                    Sono sempre alla ricerca di nuove sfide per mettermi alla prova, imparare sul campo e fare networking. Attualmente sono interessato a:
+                </p>
+                <ul class="square-list">
+                    <li>Entrare a far parte di un <strong>Team CTF</strong> competitivo.</li>
+                    <li>Partecipare a <strong>Hackathon</strong> o competizioni di coding.</li>
+                    <li>Contribuire a progetti <strong>Open Source</strong>.</li>
+                    <li>Collaborazioni freelance per script, tool automatizzati o fix di sicurezza.</li>
+                </ul>
+            </section>
+
+            <!-- Right: Contatti -->
+            <section class="reveal-up delay-2">
+                <div class="card card-full-height">
+                    <h2 class="title-xl-mb-sm">Mettiamoci in contatto</h2>
+                    <p class="text-muted-mb-xl">Se hai un progetto in mente o semplicemente vuoi fare rete, mandami un'email!</p>
+                    
+                    <a href="mailto:tuo.indirizzo@email.com" class="btn btn-mb-center">Scrivimi un'Email</a>
+                    
+                    <a href="./assets/cv/cv-caseti.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-dashed-mb">Scarica il mio CV</a>
+                    
+                    <div class="flex-gap-sm-wrap">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-link">GitHub</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-link">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-link">Twitter / X</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- BOTTOM SECTION: Servizi -->
+        <section class="services-section">
+            <h2 class="section-subtitle reveal-up text-left-mb2">I Miei Servizi</h2>
+            <p class="reveal-up section-desc">
+                Oltre alle collaborazioni su progetti, offro servizi professionali di sviluppo web. 
+                Ogni pacchetto include dei bonus gratuiti pensati per dare valore immediato alla tua attivit&agrave;.
+            </p>
+
+            <div class="promo-banner reveal-up" style="background: rgba(10, 135, 84, 0.15); border: 1px solid rgba(10, 135, 84, 0.5); border-left: 6px solid var(--color-accent); padding: 1.5rem; margin: 2rem 0; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                <strong style="color: #fff; font-size: 1.2em; display: inline-block; margin-bottom: 1rem; background: var(--color-accent); padding: 0.3rem 0.8rem; border-radius: 4px; box-shadow: 0 0 15px rgba(10, 135, 84, 0.6); font-family: var(--font-sans); letter-spacing: 1px;">PROMOZIONE LANCIO ATTIVA!</strong><br>
+                I prezzi dei servizi web mostrati di seguito sono <strong>fortemente scontati</strong> e validi esclusivamente per i <strong>primi 5 clienti</strong>.<br><br>
+                <strong>PACCHETTO DI LANCIO INCLUSO:</strong> Oltre agli sconti, se rientri nei primi 5 clienti potrai scegliere <strong>GRATUITAMENTE 2 servizi su 4</strong> tra i seguenti per completare il tuo brand:
+                <ul class="square-list" style="margin-top: 0.5rem; font-size: 0.9em;">
+                    <li>Logo essenziale (testuale/SVG)</li>
+                    <li>QR code brandizzato</li>
+                    <li>Firma email HTML professionale</li>
+                    <li>Setup base Google Business Profile</li>
+                </ul>
+            </div>
+
+            <div class="card-grid servizi-cards-grid grid-cols-2">
+                
+                <!-- Servizio 1 -->
+                <div class="card reveal-up service-card delay-1">
+                    <div class="shine-border shine-green"></div>
+                    <div class="card-inner">
+                        <h3 class="card-title">Landing Page</h3>
+                        <div class="card-price"><del style="font-size: 0.6em; color: var(--color-text-muted);">300 &euro;</del> <span class="text-accent">200 &euro;</span></div>
+                        <p class="card-desc">Sviluppo di una pagina singola d'impatto. Perfetta per promuovere un prodotto specifico, un evento o una campagna mirata. Strutturata fin dal principio con <strong>SEO ottimizzata</strong> e <strong>design responsive</strong> per ogni dispositivo.</p>
+                    </div>
+                </div>
+
+                <div class="card reveal-up service-card delay-15">
+                    <div class="shine-border shine-green"></div>
+                    <div class="card-inner">
+                        <h3 class="card-title">Vetrina Base</h3>
+                        <div class="card-price"><del style="font-size: 0.6em; color: var(--color-text-muted);">600 &euro;</del> <span class="text-accent">400 &euro;</span></div>
+                        <p class="card-desc">Il punto di partenza per una piccola attivit&agrave; locale. Presenza digitale chiara, sviluppata con <strong>SEO ottimizzata</strong> e pronta per agevolare il posizionamento su Google Maps o Business Profile.</p>
+                    </div>
+                </div>
+
+                <!-- Servizio 2 -->
+                <div class="card reveal-up service-card delay-2">
+                    <div class="shine-border shine-green"></div>
+                    <div class="card-inner">
+                        <h3 class="card-title">Sito Web Completo</h3>
+                        <div class="card-price"><del style="font-size: 0.6em; color: var(--color-text-muted);">900 &euro;</del> <span class="text-accent">600 &euro;</span></div>
+                        <p class="card-desc">Un sito strutturato su pi&ugrave; pagine (Home, Chi Siamo, Servizi, Contatti). Identit&agrave; digitale completa, costruita con <strong>SEO ottimizzata avanzata</strong> e integrazione nativa del modulo contatti.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p class="reveal-up" style="margin-top: 1.5rem; font-size: 0.9em; color: var(--color-text-muted); text-align: left;">
+                <em>* <strong>Garanzia inclusa:</strong> Su tutti i servizi web è inclusa una garanzia di <strong>2 modifiche gratuite</strong> (strutturali o estetiche) entro 3 mesi dal lancio del sito.</em>
+            </p>
+            
+            <h2 class="section-subtitle reveal-up text-left-mb2" style="margin-top: 4rem;">Opzioni Extra & Manutenzione</h2>
+            <p class="reveal-up section-desc">
+                Servizi aggiuntivi per arricchire il tuo progetto, renderlo autonomo e mantenerlo aggiornato nel tempo.
+            </p>
+
+            <div class="card-grid servizi-cards-grid grid-cols-2">
+                <!-- CMS -->
+                <div class="card reveal-up service-card delay-1">
+                    <div class="card-inner">
+                        <h3 class="card-title">Pannello di Gestione (CMS)</h3>
+                        <div class="card-price"><del style="font-size: 0.6em; color: var(--color-text-muted);">+ 250 &euro;</del> <span class="text-accent">+ 200 &euro;</span></div>
+                        <p class="card-desc">Implementazione di un'interfaccia personalizzata per permetterti di modificare testi, immagini e caricare nuovi contenuti in completa autonomia.</p>
+                    </div>
+                </div>
+
+                <!-- Foto -->
+                <div class="card reveal-up service-card delay-15">
+                    <div class="card-inner">
+                        <h3 class="card-title">Servizio Fotografico in Sede</h3>
+                        <div class="card-price"><del style="font-size: 0.6em; color: var(--color-text-muted);">da 150 &euro;</del> <span class="text-accent">da 120 &euro;</span></div>
+                        <p class="card-desc">Realizzazione di scatti professionali della tua sede o dei tuoi prodotti per arricchire il sito web con immagini autentiche e di alta qualit&agrave;.</p>
+                    </div>
+                </div>
+
+                <!-- Grafica -->
+                <div class="card reveal-up service-card delay-2">
+                    <div class="card-inner">
+                        <h3 class="card-title">Elementi Grafici Extra</h3>
+                        <div class="card-price">20 - 30 &euro; cad.</div>
+                        <p class="card-desc">Progettazione di biglietti da visita, template grafici per i social media, banner promozionali o flyer cartacei coordinati con il design del sito.</p>
+                    </div>
+                </div>
+
+                <!-- Manutenzione -->
+                <div class="card reveal-up service-card delay-3">
+                    <div class="card-inner">
+                        <h3 class="card-title">Manutenzione a Consumo</h3>
+                        <div class="card-price">Da 15 &euro; a intervento</div>
+                        <p class="card-desc">Nessun abbonamento fisso mensile, paghi solo se hai bisogno. Piccole modifiche testuali (15&euro;), nuove sezioni (25&euro;), fix tecnici/sicurezza (20&euro;) e articoli blog SEO (30&euro;).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-subtitle reveal-up text-left-mb2" style="margin-top: 4rem;">Costi Vivi di Terze Parti</h2>
+            <p class="reveal-up section-desc">
+                Per la messa online di un sito ci sono dei costi infrastrutturali (che pagherai direttamente ai fornitori, non a me). Ecco una stima precisa per darti totale trasparenza.
+            </p>
+
+            <div class="card-grid servizi-cards-grid grid-cols-2">
+                <!-- TopHost -->
+                <div class="card reveal-up service-card delay-1">
+                    <div class="card-inner">
+                        <h3 class="card-title">TopHost (Hosting + Dominio)</h3>
+                        <div class="card-price">~ 15 &euro; / anno</div>
+                        <p class="card-desc">Piano Base raccomandato per la maggior parte dei siti vetrina e landing page. Ottimo rapporto qualit&agrave;-prezzo.</p>
+                    </div>
+                </div>
+
+                <!-- Iubenda -->
+                <div class="card reveal-up service-card delay-15">
+                    <div class="card-inner">
+                        <h3 class="card-title">Iubenda (Privacy/Cookie)</h3>
+                        <div class="card-price">~ 60 &euro; / anno</div>
+                        <p class="card-desc">Necessario se il sito ha tracciamenti complessi (Google Analytics, Pixel) o vende online, per essere in totale regola con il GDPR.</p>
+                    </div>
+                </div>
+
+                <!-- CookieYes -->
+                <div class="card reveal-up service-card delay-2">
+                    <div class="card-inner">
+                        <h3 class="card-title">CookieYes</h3>
+                        <div class="card-price">Gratuito</div>
+                        <p class="card-desc">Per siti vetrina standard sotto le 5.000 visite mensili, ottimo per gestire i banner dei cookie senza costi aggiuntivi.</p>
+                    </div>
+                </div>
+
+                <!-- Netlify -->
+                <div class="card reveal-up service-card delay-3">
+                    <div class="card-inner">
+                        <h3 class="card-title">Netlify</h3>
+                        <div class="card-price">Gratuito</div>
+                        <p class="card-desc">Hosting eccellente e veloce per siti completamente statici (HTML/CSS/JS) che non necessitano di backend.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Caseti. <br class="mobile-break">Tutti i diritti riservati. <span style="opacity: 0.6; font-size: 0.9em; margin-left: 10px;">&middot; Nessun cookie di tracciamento utilizzato.</span></p>
+        <p><a href="./assets/cv/cv-caseti.pdf" target="_blank" rel="noopener noreferrer">Scarica CV (PDF)</a></p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

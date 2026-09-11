@@ -1,0 +1,60 @@
+/* 
+  Palette Colori:
+  Sfondo chiaro / superficie: #D7DAE5
+  Superficie secondaria / bordi: #B9CDDA
+  Accento neutro / hover: #A6D8D4
+  Accento primario (CTA, link, tech): #0A8754
+  Accento scuro / testo / sfondo dark: #004F2D
+*/
+
+:root {
+  /* ==================================================
+     TEMA SCURO (Unico Tema)
+     ================================================== */
+  --color-bg: #0A1210; /* Derivato da #004F2D molto scuro */
+  --color-bg-secondary: #13221E;
+  --color-text: #D7DAE5;
+  --color-text-muted: #B9CDDA;
+  --color-accent: #0A8754;
+  --color-accent-hover: #A6D8D4;
+  --color-border: #004F2D;
+  
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --glow-accent: rgba(10, 135, 84, 0.4);
+
+  /* ==================================================
+     TIPOGRAFIA
+     Scelta: JetBrains Mono (Tech/Titoli) e Inter (Corpo)
+     Motivazione: Mantiene l'estetica cyber per UI e titoli, 
+     mentre assicura un'eccellente leggibilità nei testi lunghi.
+     ================================================== */
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+
+  /* ==================================================
+     SPAZIATURE
+     ================================================== */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 5rem;
+  
+  /* ==================================================
+     ALTRO
+     ================================================== */
+  --border-radius: 4px; /* Angoli leggermente tecnici, non troppo tondi */
+  --border-radius-lg: 8px;
+  --transition-speed: 0.3s;
+}
+

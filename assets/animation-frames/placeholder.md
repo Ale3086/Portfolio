@@ -1,0 +1,1 @@
+Questo è un placeholder. Inserisci in questa cartella le immagini/frame per l'animazione scroll. Assicurati di aggiornare il file `scroll-animation.js` con il numero corretto di frame e l'estensione (PNG, WebP).

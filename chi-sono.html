@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Caseti | Cyber Security & Web Dev | Perugia</title>
+    <meta name="description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta property="og:title" content="Alessandro Caseti | Cyber Security, Web & Hardware | Perugia">
+    <meta property="og:description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta property="og:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <meta property="og:url" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alessandro Caseti | Cyber Security, Web & Hardware | Perugia">
+    <meta name="twitter:description" content="Portfolio di Alessandro Caseti, Junior Cyber Security Specialist con base a Perugia. Appassionato di Sviluppo Web, Elettronica (Arduino, ESP32) e CTF. Scopri i miei progetti IT.">
+    <meta name="twitter:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/boot-sequence.css">
+        
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="./assets/js/sfx.js" defer></script>
+    <script src="./assets/js/nav.js" defer></script>
+    <script src="./assets/js/page-transitions.js" defer></script>
+    <script src="./assets/js/image-effects.js" defer></script>
+    <script src="./assets/js/animations.js" defer></script>
+    <script src="./assets/js/pixel-blast.js" defer></script>
+    <script src="./assets/js/decrypted-text.js" defer></script>
+    <script src="./assets/js/boot-sequence.js" defer></script>
+    <script src="./assets/js/scroll-animation-chisiamo.js" defer></script>
+    
+    
+<script>if(sessionStorage.getItem('hasBooted')){document.documentElement.classList.add('has-booted');}</script>
+      <!-- SEO: Dati Strutturati JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Alessandro Caseti",
+      "url": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/",
+      "image": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg",
+      "jobTitle": "Junior Cyber Security Specialist & Web Developer",
+      "alumniOf": {
+        "@type": "HighSchool",
+        "name": "ITTS A. Volta Piscille"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Perugia, Italia"
+      },
+      "knowsAbout": ["Cyber Security", "Web Development", "Hardware (Arduino, ESP32, Saldatura)", "CTF", "Ethical Hacking"]
+    }
+    </script>
+</head>
+<body class="no-scroll">
+        <div id="desktop-environment">
+        <div id="desktop-background"></div>
+        <div id="terminal-window">
+            <div class="terminal-titlebar">
+                <div class="terminal-buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">caseti@linux: ~</div>
+            </div>
+            <div id="boot-screen"></div>
+        </div>
+        <div id="taskbar">
+                                    <div class="taskbar-center">
+                <div class="app-icon" title="Spotify">
+                    <img src="./assets/img/icons/spotify_icon_1784744488073.png" alt="Spotify" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="WhatsApp">
+                    <img src="./assets/img/icons/whatsapp_icon_1784744497092.png" alt="WhatsApp" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="GitHub">
+                    <img src="./assets/img/icons/github_icon_1784744514795.png" alt="GitHub" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon" title="VS Code">
+                    <img src="./assets/img/icons/vscode_icon_1784744507337.png" alt="VS Code" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+                <div class="app-icon active terminal-icon" title="Terminal">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                </div>
+                <div class="app-icon" title="Chrome">
+                    <img src="./assets/img/icons/chrome_icon_1784744581966.png" alt="Chrome" style="width:28px;height:28px;border-radius:4px;object-fit:cover;" />
+                </div>
+            </div>
+            <div class="taskbar-time" id="taskbar-time">12:00</div>
+        </div>
+    </div>
+    <!-- Sfondo PixelBlast per tutta la pagina -->
+    <canvas id="pixel-blast-bg"></canvas>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">Caseti</div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu">&#9776;</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./chi-sono.html" class="active">Chi Sono</a>
+                <a href="./progetti.html">Progetti</a>
+                <a href="./riconoscimenti-studi.html">Studi & Riconoscimenti</a>
+                <a href="./servizi-contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-padded">
+        
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <h1 class="section-title reveal-up title-left">Chi Sono</h1>
+            
+        </section>
+
+        <!-- INTRO -->
+        <section class="intro-section intro-section-no-top-pad">
+            <div class="intro-grid">
+                <div class="intro-photo-col reveal-up">
+                    <div class="intro-photo-frame">
+                        <div class="photo-slot">
+                            <span>[ Foto personale ]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-text-col">
+                    <div class="intro-paragraphs">
+                        <p class="reveal-up delay-12">
+                            <strong class="section-title intro-subtitle subtitle-block">Ciao, mi chiamo Alessandro Caseti.</strong><br/>
+                            Ho 17 anni e frequento il terzo anno dell'ITIS A. Volta di Ponte San Giovanni, indirizzo Informatica.
+                            Nel tempo libero studio cybersecurity in modo autonomo. Ho le basi dell'elettrotecnica e so lavorare con le PCB.
+                        </p>
+                        <p class="reveal-up delay-20">
+                            Conosco bene Python e C++, e sto costruendo esperienza giorno dopo giorno.
+                            Sto studiando JavaScript, SQL, C e Assembly per approfondire il mio percorso in cybersecurity.
+                        </p>
+                        <p class="reveal-up delay-28">
+                            Sono una persona determinata: quando mi fisso un obiettivo, trovo sempre il modo per raggiungerlo.
+                            Preferisco trovare le soluzioni autonomamente, ma mi piace condividere il processo con gli altri.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+                <!-- FULLSCREEN ANIMATION WRAPPER -->
+    <div class="scroll-animation-wrapper chi-sono-scroll-wrapper">
+        
+        <!-- Canvas Sticky -->
+        <div class="canvas-sticky-container">
+            <!-- Maschera scura opzionale -->
+            <div class="canvas-dark-mask"></div>
+            
+            <canvas id="animation-canvas-chisiamo" class="full-cover-canvas"></canvas>
+
+                        <!-- 1. Intro -->
+            <div id="st-1" class="scroll-text scroll-text-box-md">
+                <h2 class="scroll-h2">
+                    Scout una volta,<br/>
+                    <span class="text-muted-span">Scout per sempre.</span>
+                </h2>
+                <p class="scroll-p-md">
+                    Nella vita, oltre alla passione per l'informatica e la cybersecurity, sono molto legato alla natura. Per vivere questo rapporto in modo profondo ho intrapreso un percorso di vita che mi ha cambiato: fare lo scout.
+                </p>
+            </div>
+
+            <!-- 2. Iniziato 1 -->
+            <div id="st-2" class="scroll-text scroll-text-box-md">
+                <h3 class="scroll-h3-lg">Come ho iniziato</h3>
+                <p class="scroll-p-md">
+                    Il mio percorso scout inizi&ograve; a 11 anni, spinto dai miei genitori. Fin dalla prima riunione mi sentii accolto, nonostante la timidezza iniziale. Con il tempo ho preso confidenza, arrivando oggi a essere io quello che accoglie i nuovi.
+                </p>
+            </div>
+            
+            <!-- 3. Iniziato 2 -->
+            <div id="st-3" class="scroll-text scroll-text-box-md">
+                <p class="scroll-p-md">
+                    Con gli anni ho capito che lo scoutismo non &egrave; fare campeggi o fuochi, ma uno stile di vita orientato alla solidariet&agrave;. Ogni uscita dalla zona di comfort mi ha donato qualcosa di unico: un profondo senso di determinazione e avventura, al servizio degli altri.
+                </p>
+            </div>
+
+            <!-- 4. Insegnato 1 -->
+            <div id="st-4" class="scroll-text scroll-text-box-lg">
+                <h3 class="scroll-h3-sm">Cosa mi ha insegnato davvero</h3>
+                <p class="scroll-p-sm">
+                    La cosa pi&ugrave; difficile non &egrave; accendere un fuoco senza accendino. &Egrave; lavorare in team sotto pressione: quando piove da ore, tutti sono stanchi e la tenda cede, capisci chi sei davvero e come reagisci.
+                </p>
+            </div>
+
+            <!-- 5. Insegnato 2 -->
+            <div id="st-5" class="scroll-text scroll-text-box-md">
+                <p class="scroll-p-md">
+                    Capisci che traccia vuoi lasciare nel mondo, specialmente quando ti ritrovi ad aiutare persone che la societ&agrave; ha lasciato indietro &mdash; restituendo loro dignit&agrave; e rispetto.
+                </p>
+            </div>
+
+            <!-- 6. Insegnato 3 -->
+            <div id="st-6" class="scroll-text scroll-text-box-ml">
+                <p class="scroll-p-md">
+                    Ho imparato a suddividere un problema in passi gestibili, a comunicare in modo chiaro e a non perdere la calma. E ho scoperto che la parte pi&ugrave; bella di una sfida non &egrave; l'obiettivo, ma il cammino e le persone che si incontrano lungo la strada.
+                </p>
+            </div>
+
+            <!-- 7. Stelle -->
+            <div id="st-7" class="scroll-text scroll-text-box-lg">
+                <h3 class="scroll-h3-lg">Le Stelle</h3>
+                <p class="scroll-p-sm">
+                    Un elemento ricorrente che amo quando sono in natura sono le stelle. Sono lontane migliaia di chilometri eppure noi le vediamo. Questo mi ricorda quanto l'universo sia vasto e quanto noi, insieme a tutti i problemi che sembrano insormontabili, siamo in realt&agrave; molto piccoli. Un pensiero che non spaventa: libera.
+                </p>
+            </div>
+
+            <!-- 8. Fuoco -->
+            <div id="st-8" class="scroll-text scroll-text-box-lg">
+                <h3 class="scroll-h3-lg">Il Fuoco</h3>
+                <p class="scroll-p-sm">
+                    Una delle cose pi&ugrave; affascinanti dell'essere scout &egrave; il fuoco serale; come recita il canto, "esso &egrave; bello, giocondo, robusto e forte, e ci illumina il cammino." Per me il fuoco rappresenta la determinazione: se non viene alimentata, si spegne. Il fuoco lascia lapilli che ognuno segue la propria strada &mdash; come i nostri pensieri negativi che si consumano salendo, e quelli positivi che puntano sempre pi&ugrave; in alto.
+                </p>
+            </div>
+
+        </div>
+        <footer class="site-footer scroll-footer-overlay">
+            <p>&copy; 2026 Caseti. <br class="mobile-break">Tutti i diritti riservati. <span style="opacity: 0.6; font-size: 0.9em; margin-left: 10px;">&middot; Nessun cookie di tracciamento utilizzato.</span></p>
+            <p><a href="./assets/cv/cv-caseti.pdf" target="_blank" rel="noopener noreferrer">Scarica CV (PDF)</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

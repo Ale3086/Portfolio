@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Caseti | Cyber Security & Web Dev | Perugia</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/boot-sequence.css">
+    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-bg); /* O qualsiasi colore dark-theme usi */
+        }
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+        }
+        .error-code {
+            font-family: var(--font-mono);
+            font-size: clamp(5rem, 15vw, 12rem);
+            font-weight: 700;
+            color: var(--color-accent);
+            text-shadow: 0 0 20px rgba(10, 135, 84, 0.5);
+            margin: 0;
+            line-height: 1;
+        }
+        .error-message {
+            font-family: var(--font-mono);
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            color: #fff;
+            margin: 2rem 0;
+            letter-spacing: 2px;
+        }
+        .error-details {
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+    </style>
+    <!-- SEO: Dati Strutturati JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Alessandro Caseti",
+      "url": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/",
+      "image": "https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg",
+      "jobTitle": "Junior Cyber Security Specialist & Web Developer",
+      "alumniOf": {
+        "@type": "HighSchool",
+        "name": "ITTS A. Volta Piscille"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Perugia, Italia"
+      },
+      "knowsAbout": ["Cyber Security", "Web Development", "Hardware (Arduino, ESP32, Saldatura)", "CTF", "Ethical Hacking"]
+    }
+    </script>
+</head>
+<body class="dark-theme">
+    
+    <div class="error-container">
+        <h1 class="error-code glitch" data-text="404">404</h1>
+        <h2 class="error-message">[ ACCESS DENIED ]</h2>
+        <p class="error-details">
+            > SYSTEM_ERR: Directory or file not found.<br>
+            > The requested URL was not found on this server.<br>
+            > Action logged.
+        </p>
+        <a href="./index.html" class="btn btn-glow">INIZIALIZZA_RITORNO()</a>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
