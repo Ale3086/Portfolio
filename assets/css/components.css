@@ -145,23 +145,26 @@
   overflow: hidden;
 }
 
-.btn:hover {
-  background-color: var(--color-accent);
-  color: var(--color-bg);
-  box-shadow: 0 0 15px var(--glow-accent);
-}
-
 .btn-primary {
   background-color: var(--color-accent);
   color: #000 !important;
   border: 1px solid var(--color-accent);
   font-weight: bold;
 }
-.btn-primary:hover {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
-  color: #000 !important;
-  box-shadow: 0 0 15px var(--glow-accent);
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    box-shadow: 0 0 15px var(--glow-accent);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    color: #000 !important;
+    box-shadow: 0 0 15px var(--glow-accent);
+  }
 }
 
 /* --- Badge / Tag --- */
@@ -1363,5 +1366,22 @@
 .scroll-text-box-md.active, .scroll-text-box-ml.active, .scroll-text-box-lg.active {
     transform: translate(-50%, -50%);
 }
+
+/* ==================================================
+   PERFORMANCE FIX MOBILE (Disabilita Blur pesanti)
+   ================================================== */
+@media (max-width: 768px) {
+    /* Il blur (backdrop-filter) su mobile devasta la GPU portando a scatti e lentezza */
+    * {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+    
+    /* Sostituiamo il blur con uno sfondo scuro al 95% per mantenere leggibilità senza sforzare il telefono */
+    .card, .overlay-card, .cert-card, .placeholder-box {
+        background-color: rgba(19, 34, 30, 0.95) !important;
+    }
+}
+
 
 

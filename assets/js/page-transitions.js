@@ -87,6 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 150);
         });
     });
+    // Fix per il bottone "Indietro" dei browser mobile (BFCache)
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            transitionOverlay.style.transition = 'none';
+            transitionOverlay.style.opacity = '0';
+            transitionOverlay.style.pointerEvents = 'none';
+            sessionStorage.removeItem('isTransitioning');
+        }
+    });
 });
 
 
