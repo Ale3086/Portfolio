@@ -628,8 +628,42 @@ details[open] .faq-question::after {
     }
 }
 
+/* Scroll Margin per non tagliare le sezioni sotto l'header fisso */
+.landing-section[id],
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+.contact-cta-group a {
+    transition: all 0.25s ease;
+}
+.contact-cta-group a:active {
+    transform: scale(0.98);
+}
+#copy-email-btn:hover {
+    background: var(--primary-color) !important;
+    color: #000 !important;
+}
+
+@media (max-width: 480px) {
+    .contact-split-grid {
+        padding: 1.25rem 1rem;
+    }
+    .contact-right {
+        padding: 1.8rem 0.8rem;
+    }
+    .contact-cta-group a {
+        font-size: 0.95rem !important;
+        padding: 0.95rem 0.6rem !important;
+    }
+    .email-copy-box {
+        font-size: 0.8rem !important;
+    }
+}
+
 @media (max-width: 380px) {
     .hero-landing h1 {
         font-size: 2rem;
     }
 }
+

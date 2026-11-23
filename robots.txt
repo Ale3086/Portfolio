@@ -1,4 +1,5 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
+Disallow: /creazione-siti-web.html
 
 Sitemap: https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/sitemap.xml

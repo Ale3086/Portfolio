@@ -1,4 +1,4 @@
-﻿// decrypted-text.js
+// decrypted-text.js
 // Vanilla JS implementation of DecryptedText effect
 
 class DecryptedText {
@@ -89,16 +89,16 @@ document.addEventListener('bootComplete', () => {
             span.textContent = node.nodeValue;
             node.parentNode.replaceChild(span, node);
             
-            // 3. VelocitÃƒÂ  differenziata in base all'elemento
+            // 3. Velocità differenziata in base all'elemento
             let speed = 40;
             let maxIterations = 12;
             
             if (container.tagName.startsWith('H') || container.classList.contains('logo')) {
                 speed = 50;
-                maxIterations = 15; // PiÃƒÂ¹ lungo per i grandi titoli
+                maxIterations = 15; // Più lungo per i grandi titoli
             } else {
                 speed = 25;
-                maxIterations = 8; // PiÃƒÂ¹ rapido e scattante per bottoni e link
+                maxIterations = 8; // Più rapido e scattante per bottoni e link
             }
             
             const instance = new DecryptedText(span, { animateOn: 'view', maxIterations, speed });

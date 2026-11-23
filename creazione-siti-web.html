@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>Sviluppo Siti Web | Alessandro Caseti | Perugia</title>
-    <meta name="description" content="Il sito che porta nuovi clienti alla tua attività. Scopri i pacchetti di sviluppo web ottimizzati per la lead generation, con un focus su design premium e sicurezza.">
+    <meta name="description" content="Il sito che porta nuovi clienti alla tua attività. Scopri i pacchetti di sviluppo web pensati per ricevere prenotazioni e contatti, con un focus su design e velocità.">
+    <meta property="og:title" content="Sviluppo Siti Web | Alessandro Caseti">
+    <meta property="og:description" content="Il sito che porta nuovi clienti alla tua attività. Scopri i pacchetti di sviluppo web pensati per ricevere prenotazioni e contatti.">
+    <meta property="og:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
+    <meta property="og:url" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/creazione-siti-web.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sviluppo Siti Web | Alessandro Caseti">
+    <meta name="twitter:description" content="Il sito che porta nuovi clienti alla tua attività. Scopri i pacchetti di sviluppo web pensati per ricevere prenotazioni e contatti.">
+    <meta name="twitter:image" content="https://Ale3086.github.io/Portfolio-di-Alessandro-Caseti/assets/img/og-preview.jpg">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
     
     <!-- Google Fonts -->
@@ -34,10 +44,10 @@
 <body class="no-scroll landing-page">
     
     <!-- Background Animato Pixel Blast (Opacità ridotta per la landing) -->
-    <canvas id="pixel-blast-bg" class="canvas-bg-fixed" style="opacity: 0.45; filter: blur(0.5px);"></canvas>
+    <canvas id="pixel-blast-bg" class="pixel-blast-bg-style"></canvas>
 
     <!-- Overlay scuro per migliorare la leggibilità del testo -->
-    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, transparent 0%, rgba(10,10,10,0.8) 100%); z-index: -1; pointer-events: none;"></div>
+    <div class="dark-overlay-bg"></div>
 
     <!-- Main Navbar (con menu hamburger per mobile) -->
     <header class="site-header">
@@ -45,7 +55,9 @@
             <div class="logo">Caseti<span style="color:var(--text-muted); font-size: 0.9rem;">WebDev</span></div>
             <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu">&#9776;</button>
             <nav class="nav-links" id="nav-links">
+                <a href="#chi-sono">Chi Sono</a>
                 <a href="#processo">Il Processo</a>
+                <a href="#portfolio">Esempi</a>
                 <a href="#prezzi">I Pacchetti</a>
                 <a href="#faq">FAQ</a>
                 <a href="#preventivo" class="btn-primary" style="margin-left: 1rem; font-size: 0.9rem; border-radius: 4px;">Richiedi Preventivo</a>
@@ -53,7 +65,7 @@
         </div>
     </header>
     <!-- Hero Section -->
-    <header class="hero-landing">
+    <section class="hero-landing">
         <h1 class="reveal-up">Il sito che porta <span class="accent-text">nuovi clienti</span><br>alla tua attività.</h1>
         <p class="reveal-up">Basta con i siti vetrina invisibili. Realizzo piattaforme web premium pensate per convertire i visitatori in contatti reali e ispirare fiducia dal primo click.</p>
         <div class="reveal-up">
@@ -66,12 +78,29 @@
             <span>// Mobile First</span>
             <span>// Design Orientato al Risultato</span>
         </div>
-    </header>
+    </section>
 
     <!-- Security Differentiator -->
     <section class="security-banner reveal-up">
         <h2>Non solo un bel design.</h2>
-        <p>L'estetica non basta: il tuo sito sarà <strong>strutturato in ottica SEO e orientato alla conversione</strong>. Più che un bel biglietto da visita, avrai tra le mani una vera e propria macchina progettata per farti trovare su Google, attrarre contatti qualificati e trasformarli in clienti paganti.</p>
+        <p>L'estetica non basta: creo <strong>un sito veloce, chiaro da telefono e collegato a Google Maps</strong> per trasformare chi ti cerca online in una telefonata o una prenotazione.</p>
+    </section>
+
+    <!-- Chi Sono / Referente Locale Section -->
+    <section class="landing-section" id="chi-sono" style="padding-top: 2rem; padding-bottom: 1.5rem;">
+        <div class="card reveal-up" style="background: rgba(19, 34, 30, 0.6); border: 1px solid var(--color-border); border-left: 4px solid var(--primary-color); padding: 1.8rem 2rem; border-radius: 8px;">
+            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1.5px;">// Chi c'è dietro</span>
+                <h3 style="color: #fff; font-size: 1.4rem; margin: 0;">Alessandro Caseti — Sviluppatore Web Indipendente</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                    Opero da <strong>Ponte San Giovanni</strong> e lavoro faccia a faccia con le attività commerciali, gli studi e i professionisti di <strong>Perugia e dintorni</strong>. Nessun intermediario o centralino: parli e collabori direttamente con me per ogni aspetto del tuo sito, dall'idea iniziale fino alla messa online e al supporto nel tempo.
+                </p>
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.4rem;">
+                    <span class="badge" style="background: rgba(0, 255, 0, 0.08); border-color: rgba(0, 255, 0, 0.3); color: var(--primary-color); padding: 0.4rem 0.8rem;">📍 Ponte San Giovanni & Perugia</span>
+                    <span class="badge" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1); color: #fff; padding: 0.4rem 0.8rem;">🤝 Referente Unico e Diretto</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Process Section -->
@@ -103,24 +132,25 @@
             <div class="process-step">
                 <div class="step-number">5</div>
                 <h3>Consegna</h3>
-                <p>Saldo del 60% e messa online. Il tuo nuovo strumento per generare lead è pronto.</p>
+                <p>Saldo del 60% e messa online. Il tuo nuovo sito per ricevere prenotazioni e contatti è pronto.</p>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="landing-section" style="background: rgba(255,255,255,0.02);">
-        <h2 class="section-title reveal-up text-left">Design Premium. Zero Compromessi.</h2>
-        <p class="text-muted-line16-mb reveal-up">Guarda alcuni esempi di cosa posso realizzare per te.</p>
+    <section class="landing-section" id="portfolio" style="background: rgba(255,255,255,0.02);">
+        <h2 class="section-title reveal-up text-left">Lavori Realizzati</h2>
+        <p class="text-muted-line16-mb reveal-up">Ecco un esempio concreto di cosa posso realizzare per la tua attività.</p>
         
-        <div class="portfolio-grid reveal-up delay-1">
+        <div class="portfolio-grid reveal-up delay-1" style="max-width: 620px; margin: 2rem auto 0; grid-template-columns: 1fr;">
             <!-- Dentista -->
             <div class="portfolio-card">
                 <img src="./assets/img/Projects/sitoMamma1.png" alt="Studio Dentistico Pomposelli" onerror="this.src='https://via.placeholder.com/600x400/151515/00ff00?text=Studio+Dentistico'">
                 <div class="portfolio-content">
-                    <h3>Studio Dentistico Pomposelli</h3>
-                    <p>Sviluppo del primo sito per un cliente che ha richiesto un'identità digitale forte e che mostri tutte le opportunità offerte dallo studio.</p>
-                    <a href="https://www.studiodentisticopomposelli.it/" target="_blank" class="btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Vai al sito</a>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.4rem;">// Studio Sanitario & Odontoiatrico</span>
+                    <h3 style="margin-bottom: 0.5rem;">Studio Dentistico Pomposelli</h3>
+                    <p style="margin-bottom: 1.2rem; line-height: 1.5;">Presenza online professionale e moderna per uno studio odontoiatrico: interfaccia rapida da smartphone, presentazione chiara dei trattamenti e modulo diretto per le richieste di visita.</p>
+                    <a href="https://www.studiodentisticopomposelli.it/" target="_blank" rel="noopener noreferrer" class="btn-outline" style="padding: 0.6rem 1.2rem; font-size: 0.9rem; align-self: flex-start;">Visita il sito online ↗</a>
                 </div>
             </div>
         </div>
@@ -129,18 +159,16 @@
     <!-- Pricing Section -->
     <section class="landing-section" id="prezzi">
         <h2 class="section-title reveal-up text-left">Scegli il Tuo Pacchetto</h2>
-        <p class="text-muted-line16-mb reveal-up">Prezzi chiari, trasparenti e scontati per la fase di lancio.<br>
+        <p class="text-muted-line16-mb reveal-up">Prezzi chiari, trasparenti e scontati per la fase di lancio (compensi lordi, nessuna IVA per prestazione occasionale).<br>
         <em style="font-size: 0.85em; opacity: 0.8;">Nota bene: Progetti complessi come <strong>Web App e Gestionali</strong> non rientrano in questi pacchetti (preventivo su misura).</em></p>
         
         <div class="promo-banner reveal-up" style="background: rgba(10, 135, 84, 0.15); border: 1px solid rgba(10, 135, 84, 0.5); border-left: 6px solid var(--color-accent); padding: 1.5rem; margin: 2rem 0; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
             <strong style="color: #fff; font-size: 1.2em; display: inline-block; margin-bottom: 1rem; background: var(--color-accent); padding: 0.3rem 0.8rem; border-radius: 4px; box-shadow: 0 0 15px rgba(10, 135, 84, 0.6); color: #000; font-family: var(--font-sans); letter-spacing: 1px;">OFFERTA DI LANCIO (Primi 5 Clienti)</strong><br>
             I prezzi mostrati qui sotto includono uno sconto massiccio rispetto al mio listino standard.<br><br>
-            <strong>INOLTRE:</strong> Se rientri nei primi 5 clienti, scegliendo uno dei pacchetti potrai avere <strong>GRATUITAMENTE 2 elementi extra</strong> a scelta tra:
-            <ul class="square-list" style="margin-top: 0.5rem; font-size: 0.9em;">
-                <li>Logo essenziale (testuale/SVG)</li>
-                <li>QR code brandizzato</li>
-                <li>Firma email HTML professionale</li>
-                <li>Setup base Google Business Profile</li>
+            <strong>INOLTRE:</strong> Se rientri nei primi 5 clienti, hai diritto a <strong>Servizi Extra GRATUITI</strong> in base al pacchetto scelto:
+            <ul class="square-list" style="margin-top: 0.5rem; font-size: 0.95em;">
+                <li><strong>Sito Web Completo:</strong> 2 servizi in regalo (1 di "Presenza Online" + 1 di "Materiali Grafici")</li>
+                <li><strong>Vetrina Base:</strong> 1 servizio in regalo (dalla categoria "Presenza Online")</li>
             </ul>
         </div>
 
@@ -151,12 +179,13 @@
                 <h3>Landing Page</h3>
                 <p style="color: var(--text-muted); margin-bottom: 1rem;">Singola pagina altamente persuasiva.</p>
                 <div class="price-container">
-                    <span class="old-price">€300</span>
-                    <span class="new-price">€200</span>
+                    <span class="old-price">€330</span>
+                    <span class="new-price">€220</span>
+                    <span style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">(o <strong style="color: #fff;">€176</strong> a bonifico con Partita IVA · zero IVA)</span>
                 </div>
                 <ul class="pricing-features">
                     <li>1 Pagina (Struttura persuasiva)</li>
-                    <li>Garanzia: 1 modifica gratis in 2 mesi</li>
+                    <li>Garanzia bug gratuita: 1 mese</li>
                 </ul>
                 <a href="#preventivo" class="btn-outline" style="display: block; text-align: center;">Richiedi</a>
             </div>
@@ -167,15 +196,19 @@
                 <h3>Sito Web Completo</h3>
                 <p style="color: var(--text-muted); margin-bottom: 1rem;">La soluzione ideale per affermare il tuo brand.</p>
                 <div class="price-container">
-                    <span class="old-price">€900</span>
-                    <span class="new-price">€600</span>
+                    <span class="old-price">€990</span>
+                    <span class="new-price">€660</span>
+                    <span style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">(o <strong style="color: #fff;">€528</strong> a bonifico con Partita IVA · zero IVA)</span>
                 </div>
                 <ul class="pricing-features">
                     <li>Fino a 7 Pagine strutturate</li>
-                    <li>Garanzia: 3 modifiche gratis in 4 mesi</li>
-                    <li><strong style="color:var(--primary-color);">+1 Elemento in Omaggio</strong> (dall'offerta di lancio o elemento grafico a scelta)</li>
+                    <li>Garanzia bug gratuita: 3 mesi</li>
+                    <li><strong style="color:var(--primary-color);">+2 Servizi Extra in Omaggio</strong><br><span style="font-size:0.9em; opacity:0.8;">(1 di Presenza + 1 di Grafica)</span></li>
                 </ul>
-                <a href="#preventivo" class="btn-primary" style="display: block; text-align: center;">Richiedi Preventivo</a>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: auto;">
+                    <a href="https://ale3086.github.io/showcase-aura-architettura/" target="_blank" rel="noopener noreferrer" class="btn-outline" style="display: block; text-align: center; font-size: 0.85rem; padding: 0.7rem 1rem;">Vedi Esempio Prodotto (Demo) ↗</a>
+                    <a href="#preventivo" class="btn-primary" style="display: block; text-align: center;">Richiedi Preventivo</a>
+                </div>
             </div>
 
             <!-- Vetrina Base -->
@@ -183,12 +216,14 @@
                 <h3>Vetrina Base</h3>
                 <p style="color: var(--text-muted); margin-bottom: 1rem;">Per chi ha bisogno di esserci, in modo professionale.</p>
                 <div class="price-container">
-                    <span class="old-price">€600</span>
-                    <span class="new-price">€400</span>
+                    <span class="old-price">€660</span>
+                    <span class="new-price">€440</span>
+                    <span style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">(o <strong style="color: #fff;">€352</strong> a bonifico con Partita IVA · zero IVA)</span>
                 </div>
                 <ul class="pricing-features">
                     <li>3 Pagine (Home, Chi Siamo, Contatti)</li>
-                    <li>Garanzia: 2 modifiche gratis in 3 mesi</li>
+                    <li>Garanzia bug gratuita: 2 mesi</li>
+                    <li><strong style="color:var(--primary-color);">+1 Servizio Extra in Omaggio</strong><br><span style="font-size:0.9em; opacity:0.8;">(dalla categoria Presenza)</span></li>
                 </ul>
                 <a href="#preventivo" class="btn-outline" style="display: block; text-align: center;">Richiedi</a>
             </div>
@@ -202,20 +237,21 @@
                 <table class="price-table-minimal">
                     <tr><td>Pagine aggiuntive (oltre la 7ª)</td><td>+80€/pag</td></tr>
                     <tr><td>Copywriting persuasivo</td><td>da 100€</td></tr>
-                    <tr><td>Pannello CMS (Gestione autonoma)</td><td><del style="color:var(--text-muted);font-size:0.8em;">250€</del> 200€</td></tr>
+                    <tr><td>Gestione autonoma (per aggiornare da solo menù, testi e foto)</td><td><del style="color:var(--text-muted);font-size:0.8em;">250€</del> 200€</td></tr>
                     <tr><td>Servizio fotografico in sede</td><td>da 120€</td></tr>
-                    <tr><td>Grafica Extra (es. Logo base)</td><td><del style="color:var(--text-muted);font-size:0.8em;">50€</del> 35€</td></tr>
+                    <tr><td>Servizi Extra</td><td>50€/cad</td></tr>
                 </table>
             </div>
 
             <!-- Card 2: Modifiche a Consumo -->
             <div>
                 <h3 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.3rem;">Modifiche a Consumo</h3>
-                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Nessun abbonamento. Paghi solo se e quando serve un aggiornamento al sito (fuori garanzia).</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Nessun abbonamento. Paghi solo se e quando serve un aggiornamento al sito (stime indicative, fuori garanzia bug).</p>
                 <table class="price-table-minimal">
-                    <tr><td>Piccola modifica (testi, foto)</td><td>25€</td></tr>
-                    <tr><td>Modifica media (nuova sezione)</td><td>50€</td></tr>
-                    <tr><td>Creazione nuova pagina</td><td>150€</td></tr>
+                    <tr><td>Piccola modifica (testi, foto)</td><td>~30€</td></tr>
+                    <tr><td>Modifica media (nuova sezione)</td><td>~55€</td></tr>
+                    <tr><td>Ricerca e sistemazione bug (fuori garanzia)</td><td>~80€</td></tr>
+                    <tr><td>Creazione nuova pagina</td><td>Su preventivo</td></tr>
                     <tr><td>Restyling del sito</td><td>Su preventivo</td></tr>
                 </table>
             </div>
@@ -223,12 +259,98 @@
             <!-- Card 3: Costi Terzi (Costi Vivi) -->
             <div>
                 <h3 style="color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.3rem;">Costi di Terze Parti</h3>
-                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Costi annuali da pagare ai fornitori per mantenere il sito online e a norma col GDPR.</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Costi annuali da pagare ai fornitori per mantenere il sito online e a norma col GDPR (da ~15€ a ~75€/anno).</p>
                 <table class="price-table-minimal">
                     <tr><td>Hosting + Dominio (es. TopHost)</td><td>~15€/anno</td></tr>
-                    <tr><td>Privacy Policy Pro (es. Iubenda)</td><td>~60€/anno</td></tr>
+                    <tr><td>Privacy Policy Pro (es. Iubenda)<br><span style="font-size: 0.8em; color: var(--text-muted);">(Solo per siti che raccolgono dati sensibili come con form contatti o Analytics)</span></td><td>~60€/anno</td></tr>
                     <tr><td>Banner Cookie Base (CookieYes)</td><td>Gratis</td></tr>
                 </table>
+            </div>
+        </div>
+        
+        <!-- Nuova Card Servizi Extra Dettagliati -->
+        <div class="card reveal-up delay-3" style="margin-top: 2rem; background-color: rgba(19, 34, 30, 0.6); border: 1px solid var(--primary-color); padding: 1.2rem; border-radius: 8px;">
+            <h3 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center; font-size: 1.5rem;">Cosa includono i "Servizi Extra"?</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 2.5rem;">
+                <!-- Presenza Online -->
+                <div>
+                    <h4 style="color: #fff; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.1rem; text-transform: uppercase;">Presenza Online e Reputazione</h4>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Google Business</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Creazione o sistemazione account dedicato con tool e Drive.</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Google Maps</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Controllo Posizione (verifica pin, categoria, orari, descrizione).</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">WhatsApp Business</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Setup con messaggio di benvenuto automatico, orari e catalogo.</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Analytics 4 & Search Console</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Pannello per scoprire le visite e con quali parole chiave ti cercano.</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Tag Manager & Meta Pixel</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Tracciamenti avanzati. Indispensabili per future sponsorizzate di retargeting.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materiali Grafici -->
+                <div>
+                    <h4 style="color: #fff; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.1rem; text-transform: uppercase;">Materiali Grafici Di Brand</h4>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Biglietti da Visita</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Design fronte/retro in file pronto per la stampa tipografica.</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Template Post Social</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">1-2 layout riutilizzabili in formato immagine pronti all'uso.</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">QR Code Brandizzato</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Design con logo e colori aziendali, link al sito o WhatsApp.</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 12px; align-items: flex-start;">
+                            <span style="color: var(--primary-color); font-weight: bold; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong style="color: #fff; display: block; font-size: 0.95rem; margin-bottom: 0.2rem;">Volantino / Flyer Digitale</strong>
+                                <span style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4; display: block;">Formato A5 o A4 stampabile o per condivisione online.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -254,43 +376,63 @@
             </details>
             <details class="faq-item">
                 <summary class="faq-question">Cosa succede dopo la consegna?</summary>
-                <div class="faq-answer">Una volta online, il sito è 100% di tua proprietà. Per permetterti di testarlo in reale operatività, tutti i pacchetti includono una <strong>Garanzia Post-Lancio</strong> (da 2 a 4 mesi di assistenza con modifiche gratuite). Al termine della garanzia, non sarai vincolato a nessun abbonamento mensile: lavoro "a consumo", intervenendo solo quando serve.</div>
+                <div class="faq-answer">Una volta online sul tuo dominio definitivo, il sito è 100% di tua proprietà. È inclusa una <strong>Garanzia bug gratuita</strong> (Landing Page 1 mese, Vetrina Base 2 mesi, Sito Web Completo 3 mesi) che copre la correzione di eventuali errori tecnici. Al termine della garanzia, e per qualsiasi modifica ai contenuti (testi, foto, sezioni) dalla consegna in poi, non sarai vincolato ad alcun abbonamento fisso: lavoro "a consumo" con tariffe chiare e trasparenti, intervenendo solo se e quando serve.</div>
             </details>
             <details class="faq-item">
                 <summary class="faq-question">Ci sono costi extra per Hosting e Dominio?</summary>
-                <div class="faq-answer">Sì, i costi di hosting, dominio e gestione privacy (es. Iubenda) sono a parte e vanno pagati direttamente ai fornitori terzi (circa 15-30€ all'anno in totale per un sito base). Ti guiderò in ogni passaggio per l'acquisto.</div>
+                <div class="faq-answer">Sì, i costi di hosting e dominio si aggirano sui 15€/anno da corrispondere direttamente al fornitore (es. TopHost). Se il sito raccoglie dati personali (tramite modulo contatti o statistiche), si aggiungerà il servizio per l'adeguamento GDPR (Privacy Policy) come Iubenda (circa 60€/anno, per un totale complessivo stimato tra i ~15€ e ~75€/anno). Ti guiderò io passo passo nella configurazione.</div>
             </details>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="landing-section" id="preventivo">
-        <h2 class="section-title reveal-up text-left">Facciamo Crescere il Tuo Business</h2>
-        <p class="text-muted-line16-mb reveal-up">Nessun form complicato. Contattami direttamente via mail.</p>
+        <h2 class="section-title reveal-up text-left">Parliamo del Tuo Progetto</h2>
+        <p class="text-muted-line16-mb reveal-up">Nessun intermediario o centralino. Scrivimi direttamente per una consulenza o un preventivo.</p>
         
         <div class="contact-split-grid reveal-up delay-1">
             <div class="contact-left">
-                <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Mettiamoci al Lavoro</h3>
-                <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">Per garantirti la massima velocità e zero costi nascosti, preferisco il contatto diretto via email. Niente form noiosi da compilare.</p>
+                <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Mettiamoci in Contatto</h3>
+                <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">Per qualsiasi domanda, dubbio o per ricevere una proposta chiara e senza sorprese, puoi scrivermi direttamente su WhatsApp o via email.</p>
                 <div class="contact-requirements">
-                    <p style="color: #fff; font-weight: bold; margin-bottom: 1rem;">Scrivimi indicando:</p>
+                    <p style="color: #fff; font-weight: bold; margin-bottom: 1rem;">Nel messaggio indicami pure:</p>
                     <ul>
-                        <li><span class="accent-text">&gt;</span> Il tuo Nome / Azienda</li>
-                        <li><span class="accent-text">&gt;</span> Tipo di attività (Es. Ristorante, Studio)</li>
-                        <li><span class="accent-text">&gt;</span> Il pacchetto a cui sei interessato</li>
+                        <li><span class="accent-text">&gt;</span> Il tuo Nome o Nome dell'Attività</li>
+                        <li><span class="accent-text">&gt;</span> Tipo di attività (es. Ristorante, Pizzeria, Negozio, Studio)</li>
+                        <li><span class="accent-text">&gt;</span> Il pacchetto a cui stai pensando (o l'idea che hai in mente)</li>
                     </ul>
                 </div>
             </div>
             <div class="contact-right">
                 <div class="icon-circle">
                     <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                     </svg>
                 </div>
-                <h3 style="color: #fff; font-size: 1.5rem; margin: 1rem 0 0.5rem;">Inviami una Mail</h3>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Rispondo in genere entro 24 ore.</p>
-                <a href="mailto:alessandroc2409@gmail.com?subject=Richiesta Preventivo Sviluppo Sito Web" class="btn-primary" style="display: block; text-align: center; width: 100%; box-sizing: border-box; padding: 1.2rem;">Apri Client Mail</a>
+                <h3 style="color: #fff; font-size: 1.5rem; margin: 0.6rem 0 0.3rem;">Scrivimi Subito</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Rispondo sempre di persona, in genere entro poche ore.</p>
+                
+                <div class="contact-cta-group" style="width: 100%; display: flex; flex-direction: column; gap: 0.85rem;">
+                    <!-- Pulsante WhatsApp Diretto -->
+                    <a id="whatsapp-btn" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Alessandro,%20vorrei%20informazioni%20per%20il%20sito%20web%20della%20mia%20attivit%C3%A0." target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.6rem; width: 100%; box-sizing: border-box; padding: 1.1rem; font-size: 1rem; border-radius: 6px; text-decoration: none; background: #25D366; color: #000; border-color: #25D366; font-weight: bold;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.158.572 4.184 1.572 5.939l-1.667 6.089 6.257-1.642c1.708.932 3.666 1.464 5.753 1.464 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                        <span>Scrivimi su WhatsApp</span>
+                    </a>
+
+                    <!-- Indirizzo Email Visibile in Chiaro con Tasto Copia -->
+                    <div class="email-copy-box" style="width: 100%; display: flex; align-items: center; justify-content: space-between; background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 6px; padding: 0.75rem 1rem; box-sizing: border-box;">
+                        <a href="mailto:caseti.webdev@gmail.com" style="color: #fff; text-decoration: none; font-family: var(--font-mono); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>caseti.webdev@gmail.com</span>
+                        </a>
+                        <button type="button" id="copy-email-btn" onclick="copyContactEmail()" aria-label="Copia indirizzo email" style="background: rgba(0, 255, 0, 0.1); color: var(--primary-color); border: 1px solid var(--primary-color); padding: 0.35rem 0.7rem; border-radius: 4px; font-size: 0.75rem; cursor: pointer; font-family: var(--font-mono); transition: all 0.2s ease; margin-left: 0.5rem; white-space: nowrap;">Copia</button>
+                    </div>
+
+                    <!-- CTA Secondaria Webmail Gmail -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=caseti.webdev@gmail.com&su=Richiesta+Preventivo+Sviluppo+Sito+Web&body=Ciao%20Alessandro,%0A%0A-%20Nome%20/%20Azienda:%20%0A-%20Tipo%20di%20attivit%C3%A0:%20%0A-%20Pacchetto%20di%20interesse:%20%0A-%20Dettagli%20o%20richieste%20particolari:%20" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); font-size: 0.8rem; text-align: center; text-decoration: underline; margin-top: 0.2rem;">
+                        Oppure componi direttamente da Gmail Web ↗
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -299,13 +441,52 @@
         <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Alessandro Caseti. Tutti i diritti riservati.</p>
     </footer>
 
-    <!-- Script per avviare le animazioni ignorando il terminale -->
+    <!-- Script per avviare le animazioni ignorando il terminale e funzione copia email -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.dispatchEvent(new Event('bootComplete'));
             document.documentElement.classList.remove('no-scroll');
             document.body.classList.remove('no-scroll');
         });
+
+        function copyContactEmail() {
+            const email = 'caseti.webdev@gmail.com';
+            const btn = document.getElementById('copy-email-btn');
+            const showSuccess = () => {
+                if (!btn) return;
+                const originalText = btn.innerText;
+                btn.innerText = 'Copiato! ✓';
+                btn.style.background = 'var(--primary-color)';
+                btn.style.color = '#000';
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.background = 'rgba(0, 255, 0, 0.1)';
+                    btn.style.color = 'var(--primary-color)';
+                }, 2000);
+            };
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(email).then(showSuccess).catch(() => fallbackCopy(email));
+            } else {
+                fallbackCopy(email);
+            }
+
+            function fallbackCopy(text) {
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-9999px';
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    showSuccess();
+                } catch (err) {
+                    console.error('Copia fallita', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
     </script>
 </body>
 </html>

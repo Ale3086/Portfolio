@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         // Vai alla nuova pagina (pausa per lasciar leggere il comando)
                         setTimeout(() => {
                             window.location.href = targetUrl;
-                        }, 400); // Prima era 50ms, ora Ã¨ abbastanza da essere letto ma veloce
+                        }, 400); // Prima era 50ms, ora è abbastanza da essere letto ma veloce
                     }
                 }, typingSpeed);
             }, 150);
