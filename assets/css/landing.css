@@ -345,7 +345,7 @@ body.landing-page {
         border-right: none;
     }
 }
-.badge {
+.pricing-card .badge {
     position: absolute;
     top: -12px;
     left: 50%;
